@@ -5,6 +5,7 @@ import java.util.List;
 
 import uk.co.cemerson.hack24.bigcrane.BigCrane.Command;
 import uk.co.cemerson.hack24.bigcrane.BigCrane.Commands.MoveRightCommand;
+import uk.co.cemerson.hack24.bigcrane.BigCrane.Game;
 import uk.co.cemerson.hack24.bigcrane.BigCrane.Instruction;
 import uk.co.cemerson.hack24.bigcrane.BigCrane.Program;
 import uk.co.cemerson.hack24.bigcrane.R;
@@ -16,10 +17,8 @@ public class CallFunction3Instruction extends Instruction
     }
 
     @Override
-    public List<Command> getCommandList() {
-        List<Command> commandList = new ArrayList<>();
-
-        return commandList;
+    public void execute(Game game) {
+        game.addInstructionsFromFunction(game.getProgram().getFunction3());
     }
 
     @Override

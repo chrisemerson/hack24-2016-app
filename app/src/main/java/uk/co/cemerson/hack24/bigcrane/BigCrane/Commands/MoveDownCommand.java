@@ -5,14 +5,14 @@ import uk.co.cemerson.hack24.bigcrane.BigCrane.Program;
 import uk.co.cemerson.hack24.bigcrane.BigCrane.RobotArmInterface;
 
 public class MoveDownCommand extends Command {
-    private int units;
+    private int stackSize;
 
-    public MoveDownCommand(int units) {
-        this.units = units;
+    public MoveDownCommand(int stackSize) {
+        this.stackSize = stackSize;
     }
 
     @Override
     public void executeCommand(RobotArmInterface robotArmInterface, Program program) {
-        robotArmInterface.moveDown(units);
+        robotArmInterface.moveDown(stackSize);
     }
 }

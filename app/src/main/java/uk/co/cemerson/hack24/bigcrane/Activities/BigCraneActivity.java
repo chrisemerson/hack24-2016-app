@@ -23,13 +23,16 @@ import uk.co.cemerson.hack24.bigcrane.BigCrane.Instructions.MoveLeftInstruction;
 import uk.co.cemerson.hack24.bigcrane.BigCrane.Instructions.MoveRightInstruction;
 import uk.co.cemerson.hack24.bigcrane.BigCrane.Level;
 import uk.co.cemerson.hack24.bigcrane.BigCrane.Levels.Level1;
+import uk.co.cemerson.hack24.bigcrane.BigCrane.Levels.Level2;
+import uk.co.cemerson.hack24.bigcrane.BigCrane.Levels.Level3;
 import uk.co.cemerson.hack24.bigcrane.BigCrane.Program;
+import uk.co.cemerson.hack24.bigcrane.BigCrane.RobotArmInterfaces.ConsoleLogRobotArmInterface;
+import uk.co.cemerson.hack24.bigcrane.BigCrane.RobotArmInterfaces.SocketRobotArmInterface;
 import uk.co.cemerson.hack24.bigcrane.BigCrane.Stack;
 import uk.co.cemerson.hack24.bigcrane.R;
 
 public class BigCraneActivity extends AppCompatActivity {
     private Game game;
-    private Level level;
     private Program program;
 
     private int currentFunctionNo;
@@ -47,8 +50,8 @@ public class BigCraneActivity extends AppCompatActivity {
         currentFunctionNo = 1;
         currentFunction = program.getFunction1();
 
-        level = new Level1();
-        game = new Game(program, level);
+        Level level = new Level1();
+        game = new Game(program, level, new ConsoleLogRobotArmInterface());
 
         renderCrateDisplay("start", level.getStart());
         renderCrateDisplay("goal", level.getGoal());
@@ -280,24 +283,23 @@ public class BigCraneActivity extends AppCompatActivity {
                 TextView bigButtonText = (TextView) findViewById(R.id.big_button_text);
                 ImageView bigButtonImage = (ImageView) findViewById(R.id.big_button_image);
 
-                if (gamePlaying) {
-                    allowModification = true;
-                    bigButtonText.setText("RUN");
-
-                    bigButtonImage.setImageResource(android.R.drawable.ic_media_play);
-
-                    game.playGame();
-                    gamePlaying = false;
-                } else {
+                if (!gamePlaying) {
                     allowModification = false;
                     bigButtonText.setText("STOP");
 
                     bigButtonImage.setImageResource(android.R.drawable.ic_media_pause);
 
-                    game.stopGame();
+//                    game.playGame();
                     gamePlaying = true;
-                }
+                } else {
+                allowModification = true;
+                bigButtonText.setText("RUN");
 
+                bigButtonImage.setImageResource(android.R.drawable.ic_media_play);
+
+                game.stopGame();
+                gamePlaying = false;
+                }
             }
         });
     }

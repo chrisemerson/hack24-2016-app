@@ -6,9 +6,9 @@ public interface RobotArmInterface
 
     public void moveRight();
 
-    public void moveDown(int units);
+    public void moveDown(int stackSize);
 
-    public void moveUp(int units);
+    public void moveUp();
 
     public void grab();
 

@@ -33,4 +33,8 @@ public class Stack {
 
         throw new RuntimeException("No such crate");
     }
+
+    public int size() {
+        return crateStack.size();
+    }
 }
