@@ -12,4 +12,6 @@ abstract public class Instruction
     }
 
     public abstract List<Command> getCommandList();
+
+    public abstract int getIconResourceId();
 }

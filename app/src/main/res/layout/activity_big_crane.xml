@@ -539,6 +539,7 @@
                 android:paddingBottom="1dp"
                 android:paddingLeft="1dp">
                 <TextView
+                    android:id="@+id/function_1_button"
                     android:layout_width="30dp"
                     android:layout_height="match_parent"
                     android:background="#333333"
@@ -550,51 +551,61 @@
                     android:layout_marginRight="1dp"
                     android:clickable="true"/>
                 <ImageView
+                    android:id="@+id/function_1_1"
                     android:layout_width="25dp"
                     android:layout_height="match_parent"
                     android:background="#000000"
                     android:layout_marginRight="1dp"/>
                 <ImageView
+                    android:id="@+id/function_1_2"
                     android:layout_width="25dp"
                     android:layout_height="match_parent"
                     android:background="#000000"
                     android:layout_marginRight="1dp"/>
                 <ImageView
+                    android:id="@+id/function_1_3"
                     android:layout_width="25dp"
                     android:layout_height="match_parent"
                     android:background="#000000"
                     android:layout_marginRight="1dp"/>
                 <ImageView
+                    android:id="@+id/function_1_4"
                     android:layout_width="25dp"
                     android:layout_height="match_parent"
                     android:background="#000000"
                     android:layout_marginRight="1dp"/>
                 <ImageView
+                    android:id="@+id/function_1_5"
                     android:layout_width="25dp"
                     android:layout_height="match_parent"
                     android:background="#000000"
                     android:layout_marginRight="1dp"/>
                 <ImageView
+                    android:id="@+id/function_1_6"
                     android:layout_width="25dp"
                     android:layout_height="match_parent"
                     android:background="#000000"
                     android:layout_marginRight="1dp"/>
                 <ImageView
+                    android:id="@+id/function_1_7"
                     android:layout_width="25dp"
                     android:layout_height="match_parent"
                     android:background="#000000"
                     android:layout_marginRight="1dp"/>
                 <ImageView
+                    android:id="@+id/function_1_8"
                     android:layout_width="25dp"
                     android:layout_height="match_parent"
                     android:background="#000000"
                     android:layout_marginRight="1dp"/>
                 <ImageView
+                    android:id="@+id/function_1_9"
                     android:layout_width="25dp"
                     android:layout_height="match_parent"
                     android:background="#000000"
                     android:layout_marginRight="1dp"/>
                 <ImageView
+                    android:id="@+id/function_1_10"
                     android:layout_width="25dp"
                     android:layout_height="match_parent"
                     android:background="#000000"
@@ -613,6 +624,7 @@
                 android:paddingBottom="1dp"
                 android:paddingLeft="1dp">
                 <TextView
+                    android:id="@+id/function_2_button"
                     android:layout_width="30dp"
                     android:layout_height="match_parent"
                     android:background="#333333"
@@ -624,26 +636,31 @@
                     android:layout_marginRight="1dp"
                     android:clickable="true"/>
                 <ImageView
+                    android:id="@+id/function_2_1"
                     android:layout_width="25dp"
                     android:layout_height="match_parent"
                     android:background="#000000"
                     android:layout_marginRight="1dp"/>
                 <ImageView
+                    android:id="@+id/function_2_2"
                     android:layout_width="25dp"
                     android:layout_height="match_parent"
                     android:background="#000000"
                     android:layout_marginRight="1dp"/>
                 <ImageView
+                    android:id="@+id/function_2_3"
                     android:layout_width="25dp"
                     android:layout_height="match_parent"
                     android:background="#000000"
                     android:layout_marginRight="1dp"/>
                 <ImageView
+                    android:id="@+id/function_2_4"
                     android:layout_width="25dp"
                     android:layout_height="match_parent"
                     android:background="#000000"
                     android:layout_marginRight="1dp"/>
                 <ImageView
+                    android:id="@+id/function_2_5"
                     android:layout_width="25dp"
                     android:layout_height="match_parent"
                     android:background="#000000"
@@ -662,6 +679,7 @@
                 android:paddingBottom="1dp"
                 android:paddingLeft="1dp">
                 <TextView
+                    android:id="@+id/function_3_button"
                     android:layout_width="30dp"
                     android:layout_height="match_parent"
                     android:background="#333333"
@@ -673,26 +691,31 @@
                     android:layout_marginRight="1dp"
                     android:clickable="true"/>
                 <ImageView
+                    android:id="@+id/function_3_1"
                     android:layout_width="25dp"
                     android:layout_height="match_parent"
                     android:background="#000000"
                     android:layout_marginRight="1dp"/>
                 <ImageView
+                    android:id="@+id/function_3_2"
                     android:layout_width="25dp"
                     android:layout_height="match_parent"
                     android:background="#000000"
                     android:layout_marginRight="1dp"/>
                 <ImageView
+                    android:id="@+id/function_3_3"
                     android:layout_width="25dp"
                     android:layout_height="match_parent"
                     android:background="#000000"
                     android:layout_marginRight="1dp"/>
                 <ImageView
+                    android:id="@+id/function_3_4"
                     android:layout_width="25dp"
                     android:layout_height="match_parent"
                     android:background="#000000"
                     android:layout_marginRight="1dp"/>
                 <ImageView
+                    android:id="@+id/function_3_5"
                     android:layout_width="25dp"
                     android:layout_height="match_parent"
                     android:background="#000000"
@@ -712,21 +735,98 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="50">
+                android:layout_weight="50"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp">
+                    <ImageView
+                        android:id="@+id/instruction_left"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/instruction_button"
+                        android:src="@mipmap/instruction_left"/>
+                    <ImageView
+                        android:id="@+id/instruction_down"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/instruction_button"
+                        android:src="@mipmap/instruction_down"/>
+                    <ImageView
+                        android:id="@+id/instruction_right"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/instruction_button"
+                        android:src="@mipmap/instruction_right"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp">
+                    <ImageView
+                        android:id="@+id/instruction_1"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/instruction_button"
+                        android:src="@mipmap/instruction_1"/>
+                    <ImageView
+                        android:id="@+id/instruction_2"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/instruction_button"
+                        android:src="@mipmap/instruction_2"/>
+                    <ImageView
+                        android:id="@+id/instruction_3"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/instruction_button"
+                        android:src="@mipmap/instruction_3"/>
+                    <ImageView
+                        android:id="@+id/instruction_backspace"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/instruction_button"
+                        android:src="@mipmap/backspace"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
             </LinearLayout>
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="30"
-                android:paddingEnd="10dp"
+                android:paddingEnd="46dp"
+                android:paddingLeft="20dp"
                 android:paddingBottom="10dp">
                 <LinearLayout
+                    android:id="@+id/big_button"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="horizontal"
-                    android:background="#333333"
+                    android:background="@drawable/instruction_button"
                     android:clickable="true">
                     <ImageView
+                        android:id="@+id/big_button_image"
                         android:layout_width="0dp"
                         android:layout_weight="40"
                         android:layout_height="match_parent"
@@ -734,6 +834,7 @@
                         android:paddingBottom="10dp"
                         android:src="@android:drawable/ic_media_play"/>
                     <TextView
+                        android:id="@+id/big_button_text"
                         android:layout_width="0dp"
                         android:layout_weight="60"
                         android:layout_height="match_parent"

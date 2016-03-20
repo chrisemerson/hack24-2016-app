@@ -15,15 +15,19 @@ public class Function
 
     public void addInstruction(Instruction instruction)
     {
-        if (instructions.size() == instructionLimit) {
-            throw new RuntimeException("Too many instructions for this function");
+        if (instructions.size() < instructionLimit) {
+            instructions.add(instruction);
         }
-
-        instructions.add(instruction);
     }
 
     public List<Instruction> getInstructions()
     {
         return instructions;
+    }
+
+    public void removeLastInstruction() {
+        if (instructions.size() != 0) {
+            instructions.remove(instructions.size() - 1);
+        }
     }
 }

@@ -6,6 +6,7 @@ import java.util.List;
 import uk.co.cemerson.hack24.bigcrane.BigCrane.Command;
 import uk.co.cemerson.hack24.bigcrane.BigCrane.Instruction;
 import uk.co.cemerson.hack24.bigcrane.BigCrane.Program;
+import uk.co.cemerson.hack24.bigcrane.R;
 
 public class CallFunction2Instruction extends Instruction
 {
@@ -18,5 +19,10 @@ public class CallFunction2Instruction extends Instruction
         List<Command> commandList = new ArrayList<>();
 
         return commandList;
+    }
+
+    @Override
+    public int getIconResourceId() {
+        return R.mipmap.instruction_2;
     }
 }
