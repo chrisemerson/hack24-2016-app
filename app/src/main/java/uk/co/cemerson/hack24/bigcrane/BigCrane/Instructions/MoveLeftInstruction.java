@@ -1,5 +1,10 @@
 package uk.co.cemerson.hack24.bigcrane.BigCrane.Instructions;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import uk.co.cemerson.hack24.bigcrane.BigCrane.Command;
+import uk.co.cemerson.hack24.bigcrane.BigCrane.Commands.MoveRightCommand;
 import uk.co.cemerson.hack24.bigcrane.BigCrane.Instruction;
 import uk.co.cemerson.hack24.bigcrane.BigCrane.Program;
 
@@ -10,7 +15,11 @@ public class MoveLeftInstruction extends Instruction
     }
 
     @Override
-    public void getCommandList() {
+    public List<Command> getCommandList() {
+        List<Command> commandList = new ArrayList<>();
 
+        commandList.add(new MoveRightCommand());
+
+        return commandList;
     }
 }

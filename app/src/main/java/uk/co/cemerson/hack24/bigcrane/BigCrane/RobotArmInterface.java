@@ -13,4 +13,8 @@ public interface RobotArmInterface
     public void grab();
 
     public void release();
+
+    public void win();
+
+    public void lose();
 }

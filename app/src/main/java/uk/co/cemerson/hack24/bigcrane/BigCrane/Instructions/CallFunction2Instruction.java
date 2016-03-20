@@ -4,21 +4,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 import uk.co.cemerson.hack24.bigcrane.BigCrane.Command;
-import uk.co.cemerson.hack24.bigcrane.BigCrane.Commands.MoveRightCommand;
 import uk.co.cemerson.hack24.bigcrane.BigCrane.Instruction;
 import uk.co.cemerson.hack24.bigcrane.BigCrane.Program;
 
-public class MoveRightInstruction extends Instruction
+public class CallFunction2Instruction extends Instruction
 {
-    public MoveRightInstruction(Program program) {
+    public CallFunction2Instruction(Program program) {
         super(program);
     }
 
     @Override
     public List<Command> getCommandList() {
         List<Command> commandList = new ArrayList<>();
-
-        commandList.add(new MoveRightCommand());
 
         return commandList;
     }

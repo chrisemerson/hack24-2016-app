@@ -2,7 +2,7 @@ package uk.co.cemerson.hack24.bigcrane.BigCrane.RobotArmInterfaces;
 
 import uk.co.cemerson.hack24.bigcrane.BigCrane.RobotArmInterface;
 
-public class NoOpRobotArmInterface implements RobotArmInterface {
+public class ConsoleLogRobotArmInterface implements RobotArmInterface {
     @Override
     public void moveLeft() {
     }
@@ -25,5 +25,13 @@ public class NoOpRobotArmInterface implements RobotArmInterface {
 
     @Override
     public void release() {
+    }
+
+    @Override
+    public void win() {
+    }
+
+    @Override
+    public void lose() {
     }
 }
